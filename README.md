@@ -1,6 +1,11 @@
 # git and ssh keys
-A how to for adding repository keys
 
+## What is this?
+Hi! If you are reading this in a web browser you are at the URL for a github repository or a gitlab project.    
+
+If you are not familiar with git please see the first tutorial in this series.  This tutorial will show you how to upload your SSH key to a repository server.
+
+## What is SSH
 SSH (secure shell) is  one of the methods used to remotely access *nix computers and it is one of the options available from  most
 repository hosts to provide encryption.
 
@@ -12,7 +17,8 @@ unique secret key for the session.
 
 For more information read this tutorial: https://www.digitalocean.com/community/tutorials/understanding-the-ssh-encryption-and-connection-process
 
-To generate a key see [instructions here](keygen.md)
+## Instructions
+Before we proceed you must have an ssh key on your local host, to generate a key see the [instructions here](keygen.md)  Once you have a key or if you previously generated a key, read on.
 
 When you generated your key ssh-keygen created a directory structure as follows
 
@@ -26,7 +32,7 @@ total 9
 -rw-r--r-- 1 owner 197121 1163 Aug 11 17:04 known_hosts
 ```
 
-Never share your private key (id_rsa) you need to get you public key into the clipboard as follows in git-bash:
+Never share your private key (id_rsa) you need to copy the content of your public key into the clipboard as follows in git-bash:
 
 ``` {.bash}
 # copy your public key to the clipboard
