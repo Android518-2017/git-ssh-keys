@@ -29,6 +29,7 @@ total 9
 Never share your private key (id_rsa) you need to get you public key into the clipboard as follows in git-bash:
 
 ``` {.bash}
+# copy your public key to the clipboard
 cat ./ssh/id_rsa.pub | clip
 ```
 
