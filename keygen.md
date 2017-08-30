@@ -14,6 +14,9 @@ $ echo $HOME
 ```{.bash}
 # cd to your home directory
 $ cd 
+```
+4. Generate your keys
+```{.bash}
 ssh-keygen -t rsa -b 4096 -C "youremail@address.here"
 # For security, provide a passphrase.
 # Press enter to save the key in $HOME/.ssh/id_rsa
